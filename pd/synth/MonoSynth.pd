@@ -164,6 +164,9 @@
 #X obj 56 290 *~;
 #X obj 167 244 *~;
 #X obj 122 248 sig~;
+#X obj 266 162 touchin;
+#X obj 266 187 / 128;
+#X obj 266 212 sig~;
 #X connect 0 0 20 1;
 #X connect 1 0 20 2;
 #X connect 2 0 20 4;
@@ -192,3 +195,6 @@
 #X connect 21 0 17 1;
 #X connect 22 0 17 3;
 #X connect 23 0 21 1;
+#X connect 24 0 25 0;
+#X connect 25 0 26 0;
+#X connect 26 0 22 0;
