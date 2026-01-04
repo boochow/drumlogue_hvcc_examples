@@ -1,0 +1,18 @@
+#N canvas 185 169 450 300 12;
+#X obj 32 13 adc~;
+#X obj 32 228 dac~;
+#X obj 135 91 * 1000;
+#X obj 83 14 r level @hv_param 0 120 100;
+#X obj 109 40 r liveness @hv_param 0 100 80 percent;
+#X obj 161 120 r damping @hv_param 0 100 0 percent;
+#X obj 135 66 r crossovr @hv_param 1 10 5 khertz;
+#X obj 31 188 rev2~, f 19;
+#X connect 0 0 7 0;
+#X connect 0 1 7 0;
+#X connect 2 0 7 3;
+#X connect 3 0 7 1;
+#X connect 4 0 7 2;
+#X connect 5 0 7 4;
+#X connect 6 0 2 0;
+#X connect 7 0 1 0;
+#X connect 7 1 1 1;
