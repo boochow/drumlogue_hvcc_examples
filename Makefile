@@ -2,7 +2,8 @@
 PLATFORMDIR   ?= $(HOME)/logue-sdk/platform
 INSTALLDIR    ?= ..
 PD_DIR        ?= ./pd
-PDLIBDIR      ?= ./heavylib
+HEAVYLIBDIR   ?= ./heavylib
+PDLIBDIR      ?= ./extra
 
 INSTALL := INSTALLDIR=$(INSTALLDIR) install
 
@@ -42,7 +43,7 @@ define GEN_RULE
 $(1)/%: $(PD_DIR)/$(1)/%.pd
 	@echo "Processing $$(@F) in $(1)..."
 	@mkdir -p $$@
-	hvcc $$< -G $(2) -o $$@ -n $$(@F) -p $(PDLIBDIR)
+	hvcc $$< -G $(2) -o $$@ -n $$(@F) -p $(PDLIBDIR) $(HEAVYLIBDIR)
 	$$(MAKE) -C $$@/logue_unit PLATFORMDIR=$$(PLATFORMDIR)/drumlogue $(INSTALL)
 
 # define target for each unit
