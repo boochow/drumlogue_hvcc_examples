@@ -9,7 +9,7 @@
 #X obj 89 287 pow~;
 #X obj 281 160 hsl 162 19 -5 5 0 0 empty _3_pitchenv_f\ @hv_param\ -5\ 5\ 0 PitchMod -2 -10 0 12 #feffc6 #000000 #000000 0 1;
 #X obj 90 488 vcf~;
-#X obj 90 512 vcf~;
+#X obj 90 548 vcf~;
 #X obj 281 341 hsl 169 18 30 3030 0 0 empty _4_cutoff_f\ @hv_param\ 30\ 3030\ 1000 Cutoff -2 -10 0 12 #dfdfdf #000000 #000000 0 1;
 #X obj 281 416 hsl 169 18 0.2 2.7 0 0 empty _5_filterq_f\ @hv_param\ 0.2\ 2.7\ 0.7 FilterQ -2 -10 0 12 #dfdfdf #000000 #000000 0 1;
 #X obj 90 639 dac~;
@@ -116,8 +116,8 @@
 #X connect 6 0 7 0;
 #X connect 7 0 3 0;
 #X connect 8 0 46 0;
-#X connect 9 0 10 0;
-#X connect 10 0 33 0;
+#X connect 9 1 10 0;
+#X connect 10 1 33 0;
 #X connect 11 0 24 0;
 #X connect 12 0 9 2;
 #X connect 12 0 10 2;
