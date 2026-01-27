@@ -64,3 +64,8 @@ To build or modify patches yourself, follow these steps:
   The reverb patch from [heavylib](https://github.com/Wasted-Audio/heavylib).
 - **Rev2.pd** 
   The reverb patch included in Pure Data Vanilla.
+
+### Master FX
+
+- **EchoBoost.pd** A sidechain-driven gain booster with echo.
+  
