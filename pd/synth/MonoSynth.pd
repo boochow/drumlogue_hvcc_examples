@@ -131,7 +131,7 @@
 #X obj 173 286 *~;
 #X obj 74 221 sig~;
 #X obj 80 23 vsl 19 81 0 1 0 0 empty _1_wvform_f\ @hv_param\ 0\ 1\ 0 SAW/SQR 0 -9 0 12 #feffc6 #000000 #000000 0 1;
-#X obj 279 63 vsl 19 81 0 1 0 0 empty _4_A_f\ @hv_param\ 0\ 1\ 0 Attack 0 -9 0 12 #ffe3c6 #000000 #000000 0 1;
+#X obj 279 63 vsl 19 81 0 1 0 0 empty _4_Attack_f\ @hv_param\ 0\ 1\ 0 Attack 0 -9 0 12 #ffe3c6 #000000 #000000 0 1;
 #X obj 74 196 expr pow(2 \, 5*$f1);
 #X connect 0 0 1 0;
 #X connect 0 1 13 0;
