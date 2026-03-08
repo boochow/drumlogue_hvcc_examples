@@ -4,7 +4,7 @@
 #X obj 297 58 delwrite~ right 4000;
 #N canvas 96 96 450 300 NoteValue2msec 0;
 #X obj 134 36 inlet notevalue;
-#X obj 37 35 r sys_tempo;
+#X obj 37 35 r sys_tempo @hv_param;
 #X obj 37 102 f 120;
 #X obj 37 133 *;
 #X obj 37 160 expr 240000/$f1;
